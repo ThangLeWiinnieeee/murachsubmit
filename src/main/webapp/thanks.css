@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper-thanks {
+    text-align: center;
+    padding: 16px;
+}
+
+#wrapper-thanks .header-thanks {
+    color: green;
+    font-size: 60px;
+    padding: 20px 0;
+}
+
+#wrapper-thanks .wrapper-info {
+    margin: 0 auto;
+    font-size: 21px;
+    max-width: 750px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#wrapper-thanks .description {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#wrapper-thanks .info {
+    padding: 10px 0;
+    margin: 3px 0;
+}
+
+#wrapper-thanks .info label {
+    font-weight: bold;
+}
+
+#wrapper-thanks .info span {
+    padding: 0 15px;
+}

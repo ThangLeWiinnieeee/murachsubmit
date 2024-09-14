@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main.css">
+    <title>Survey Murach</title>
+</head>
+<body>
+    <form id="Container" action="survey" method="post">
+        <img class="logo-murach" src="Logo-murach.jpg" alt="Murach Logo">
+        <h1>Survey</h1>
+        <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+        <h3>Your information:</h3>
+        <div class="FName">
+            <label for="FirstName">First Name</label>
+            <input class="text" type="text" name="firstName" id="FirstName" required>
+        </div>
+        <div class="LName">
+            <label for="LastName">Last Name</label>
+            <input class="text" type="text" name="lastName" id="LastName" required>
+        </div>
+        <div class="mail">
+            <label for="Email">Email</label>
+            <input class="text" type="text" name="email" id="Email" required>
+        </div>
+        <div class="DoBirth">
+            <label for="DateOfBirth">Date of Birth</label>
+            <input class="text" type="date" name="dateOfBirth" id="DateOfBirth" required>
+        </div>
+        
+        <div>
+            <h3>How did you hear about us?</h3>
+        </div>
+
+        <div class="input-radio">
+            <div>
+                <input type="radio" id="Radio1" name="chooseOne" value="Search engine" required>
+                <label for="Radio1">Search engine</label>
+            </div>
+    
+            <div>
+                <input type="radio" id="Radio2" name="chooseOne" value="Word of mouth" required>
+                <label for="Radio2">Word of mouth</label>
+            </div>
+    
+            <div>
+                <input type="radio" id="Radio3" name="chooseOne" value="Social Media" required>
+                <label for="Radio3">Social Media</label>
+            </div>
+    
+            <div>
+                <input type="radio" id="Radio4" name="chooseOne" value="Other" required>
+                <label for="Radio4">Other</label>
+            </div>
+        </div>
+
+        <div>
+            <h3>Would you like to receive announcements about new CDs and special offers?</h3>
+        </div>
+
+        <div class="checkbox">
+            <div>
+                <input type="checkbox" id="CheckBox1" name="receiveAnnouncements1" value="true" >
+                <label for="CheckBox1">YES, I'd like that</label>
+            </div>
+            <div>
+                <input type="checkbox" id="CheckBox2" name="receiveAnnouncements2" value="true" >
+                <label for="CheckBox2">YES, please send me email announcements</label>
+            </div>
+        </div>
+
+        <div class="contact">
+            <label for="contactEmail">Please contact me by</label>
+            <select id="contactEmail" name="contactMethod">
+                <option value="Eopm">Email or postal mail</option>
+                <option value="Eo">Email only</option>
+                <option value="Pmo">Postal mail only</option>
+            </select>
+        </div>
+
+        <div>
+            <input class="button-submit" type="submit" value="Submit">
+        </div>
+    </form>
+    
+    <script>
+        // Bắt sự kiện 'focus' khi người dùng nhấp vào input
+        document.getElementById('DateOfBirth').addEventListener('focus', function() {
+        this.showPicker();  // Sử dụng showPicker() để hiển thị lịch
+  });
+</script>
+</body>
+</html>
